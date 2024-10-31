@@ -2,7 +2,7 @@
   "name": "vwo-next-smartcode",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "license": "MIT",
   "peerDependencies": {
     "next": ">=12.0.0",
