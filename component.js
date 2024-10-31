@@ -3,7 +3,6 @@ import Script from 'next/script';
 import Head from 'next/head';
 import { getAsyncCode } from './scripts/async';
 
-
 export const VWOScript = ({ 
   accountId, 
   type = 'ASYNC',
@@ -54,5 +53,3 @@ export const VWOScript = ({
     </>
   );
 }; 
-
-export default VWOScript;
