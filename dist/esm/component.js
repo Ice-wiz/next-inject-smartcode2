@@ -2,7 +2,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 import React from 'react';
 import Script from 'next/script';
 import Head from 'next/head';
-import { getAsyncCode } from './scripts/async';
+import { getAsyncCode } from './scripts/async.js';
 export var VWOScript = function VWOScript(_ref) {
   var accountId = _ref.accountId,
     _ref$type = _ref.type,

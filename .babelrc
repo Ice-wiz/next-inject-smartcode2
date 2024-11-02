@@ -3,13 +3,15 @@
       "cjs": {
         "presets": [
           ["@babel/preset-env", { "modules": "commonjs" }],
-          "@babel/preset-react"
+          "@babel/preset-react",
+          "@babel/preset-typescript"
         ]
       },
       "esm": {
         "presets": [
           ["@babel/preset-env", { "modules": false }],
-          "@babel/preset-react"
+          "@babel/preset-react",
+          "@babel/preset-typescript"
         ]
       }
     }

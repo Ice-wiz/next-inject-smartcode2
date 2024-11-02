@@ -1,7 +1,7 @@
 import React from 'react';
 import Script from 'next/script';
 import Head from 'next/head';
-import { getAsyncCode } from './scripts/async';
+import { getAsyncCode } from './scripts/async.js';
 
 export const VWOScript = ({ 
   accountId, 

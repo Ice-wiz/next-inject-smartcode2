@@ -3,14 +3,24 @@
 /.pnp
 .pnp.js
 
+# Build directories
+/dist
+/build
+
 # IDE files
 .idea/
 .vscode/
+
 # Misc
 .DS_Store
 *.pem
+.env*
 
-# Debug
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log* 
+yarn-error.log*
+
+# Lock files (optional, but recommended to keep one)
+# package-lock.json
+# yarn.lock
