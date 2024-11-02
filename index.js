@@ -1,1 +1,1 @@
-export { default as VWOScript } from './component.js';
+export { VWOScript } from './component.js';
