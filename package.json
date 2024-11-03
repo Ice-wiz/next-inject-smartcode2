@@ -13,8 +13,8 @@
     "react-dom": ">=16.8.0"
   },
   "scripts": {
-    "build:cjs": "babel src --out-dir dist/cjs --env-name cjs --extensions \".js,.jsx,.ts,.tsx\"",
-    "build:esm": "babel src --out-dir dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
+    "build:cjs": "babel src --out-dir dist/cjs --env-name cjs --extensions \".js,.jsx\"",
+    "build:esm": "babel src --out-dir dist/esm --env-name esm --extensions \".js,.jsx\"",
     "build": "npm run build:cjs && npm run build:esm",
     "prepare": "npm run build"
   },
@@ -22,7 +22,6 @@
     "@babel/cli": "^7.25.9",
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.25.9",
-    "@babel/preset-typescript": "^7.26.0"
+    "@babel/preset-react": "^7.25.9"
   }
 }
