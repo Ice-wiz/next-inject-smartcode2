@@ -55,9 +55,6 @@ export const VWOScript = ({
   // Page Router implementation
   return (
     <>
-      <Head>
-        <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
-      </Head>
       <Script id="vwoCode" strategy="beforeInteractive">
         {asyncCode}
       </Script>
