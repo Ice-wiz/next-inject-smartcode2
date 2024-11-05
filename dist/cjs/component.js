@@ -4,11 +4,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.VWOScript = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _script = _interopRequireDefault(require("next/script"));
+var _head = _interopRequireDefault(require("next/head"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-// import React from 'react';
-// import Script from 'next/script';
-// import Head from 'next/head';
-
 // // Moved the async code generation directly into the component file
 // const getAsyncCode = (accountId, options = {}) => `
 // window._vwo_code || (function() {
@@ -98,15 +98,15 @@ var VWOScript = exports.VWOScript = function VWOScript(_ref) {
     return null;
   }
   if (type === 'OSC') {
-    return /*#__PURE__*/React.createElement("script", _extends({
+    return /*#__PURE__*/_react["default"].createElement("script", _extends({
       src: "https://dev.visualwebsiteoptimizer.com/lib/".concat(accountId, ".js")
     }, scriptAttributes));
   }
   if (isAppDir) {
-    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("link", {
+    return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("link", {
       rel: "preconnect",
       href: "https://dev.visualwebsiteoptimizer.com"
-    }), /*#__PURE__*/React.createElement("script", _extends({
+    }), /*#__PURE__*/_react["default"].createElement("script", _extends({
       type: "text/javascript",
       id: "vwoCode",
       dangerouslySetInnerHTML: {
@@ -116,7 +116,7 @@ var VWOScript = exports.VWOScript = function VWOScript(_ref) {
   }
 
   // Page Router implementation
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Script, _extends({
+  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_script["default"], _extends({
     id: "vwoCode",
     strategy: "beforeInteractive"
   }, scriptAttributes), smartCode));

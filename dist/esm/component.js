@@ -1,7 +1,7 @@
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-// import React from 'react';
-// import Script from 'next/script';
-// import Head from 'next/head';
+import React from 'react';
+import Script from 'next/script';
+import Head from 'next/head';
 
 // // Moved the async code generation directly into the component file
 // const getAsyncCode = (accountId, options = {}) => `
