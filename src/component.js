@@ -1,6 +1,6 @@
-// import React from 'react';
-// import Script from 'next/script';
-// import Head from 'next/head';
+import React from 'react';
+import Script from 'next/script';
+import Head from 'next/head';
 
 // // Moved the async code generation directly into the component file
 // const getAsyncCode = (accountId, options = {}) => `
