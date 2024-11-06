@@ -64,6 +64,7 @@ import Head from 'next/head';
 
 // export default VWOScript;
 
+// Smartcode implementation
 
 export const VWOScript = ({ 
   accountId, 
